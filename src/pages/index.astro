@@ -1,0 +1,295 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a new driveway cost in Officer in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most Officer driveways fall in these bands: standard concrete $90-$130/m², exposed aggregate $140-$180/m², stencilled concrete $130-$160/m², segmental block paving $130-$200/m², bluestone or granite pavers $180-$260/m². A typical 60m² double driveway runs $6,500-$11,500 in standard concrete, $9,500-$14,000 in exposed aggregate, $11,000-$16,000 in bluestone. Add 10-15% if a Cardinia Shire crossover permit is needed (most new builds in Officer 3809 estates need one for the kerb-to-property apron)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a Cardinia Shire crossover permit for a driveway in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — any work that crosses the kerb, footpath or council nature strip between the kerb and your property boundary needs a Cardinia Shire vehicle-crossing (crossover) permit. The application fee is around $200-$350 and the crossover construction must follow Council's IPWEA-aligned specification (concrete, set thickness, set width to suit driveway use). Most Officer new-build estates (Arena, Heritage Springs, Timbertop) have a pre-cast crossover from the developer — but anything wider than the original (e.g. extending a single to a double) needs a new permit. We lodge the application and arrange the council inspection as part of the job." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Officer ground move so much — what does it do to paving?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Officer sits on Class M to Class H reactive clay (mapped under AS 2870). The clay seasonally swells 20-40mm between wet winter and dry summer. On paving that means: cracked unreinforced concrete slabs within 2-5 years, lifted or sunken pavers around drainage outlets, and retaining-wall heave on shallow footings. The fix is engineering, not luck — we use steel mesh + SL82 reinforcement in driveway slabs, 100mm minimum compacted Class 3 base under all paving with proper edge restraints, and we drop retaining-wall footings below the active clay zone (typically 600mm-1.2m depending on retained height and AS 4678 spec)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Concrete pavers vs natural stone for a Cardinia Lakes patio — which is right?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Concrete pavers (Adbri, Boral, Brikmakers) cost $50-$110/m² supplied, look great new, but fade UV-grey within 5-8 years and chip at edges in heavy use. Natural stone — bluestone, sandstone, granite, travertine — costs $90-$220/m² supplied, holds colour for life, ages beautifully. For a 25m² Cardinia Lakes back patio: concrete pavers $7-9K installed, bluestone $9-12K, sandstone $10-14K. The price gap closes over a 15-year horizon because natural stone doesn't need replacement. We polymeric-sand all joints, set on a compacted screened-sand bed over Class 3 base, and edge-restrain — that's the difference between a patio that's flat in year 10 and one that's a tripping hazard." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do retaining walls need to be engineered to AS 4678?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 4678 (Earth-retaining structures) is the Australian Standard that prescribes design loadings, drainage, geotechnical capacity and reinforcement for retaining walls above 1m retained height — and on Class M/H reactive clay (most of Cardinia Shire) it's effectively required from 600mm up. Without proper engineering you get failure modes we see every week on cheap walls: bulging at mid-height, base kick-out, ag-drain blockage causing hydrostatic pressure behind the wall, and full collapse during wet winters. We engage a structural engineer for any wall over 1m, drop footings to AS 4678 spec, install sock-wrapped 100mm ag-drain at the heel, and backfill with 20mm clean drainage rock for the first 300mm against the wall — not site clay." }
+    }
+  ]
+};
+---
+<Layout
+  title="Officer Paving Co | Driveways, Patios, Retaining Walls | (03) 9003 0108"
+  description="Paving, stonemasonry, retaining walls and hardscape for Officer, Cardinia Lakes, Beaconsfield, Pakenham and Heritage Springs. Exposed aggregate, bluestone, sandstone, segmental block. AS 3727 + AS 4678 compliant. Free on-site quote.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Officer &middot; Cardinia Lakes &middot; Pakenham &middot; Cardinia Shire</span>
+      <h1>Officer&rsquo;s specialist <span class="accent">paving &amp; stonemasonry</span> contractors.</h1>
+      <p class="hero-sub">
+        Driveways in exposed aggregate, stencilled concrete and segmental block. Patios
+        in bluestone, sandstone and travertine. Pool surrounds in non-slip natural stone.
+        Engineered retaining walls to AS 4678. Across Officer, Cardinia Lakes,
+        Beaconsfield, Pakenham and Heritage Springs. Free on-site quote.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>7 days</strong>From call to fixed quote</div>
+        <div><strong>$10K&ndash;$40K</strong>Typical project range</div>
+        <div><strong>AS 3727</strong>Residential pavements</div>
+        <div><strong>AS 4678</strong>Retaining-wall engineered</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we lay</span>
+      <h2>Five paving and hardscape formats.</h2>
+      <p class="section-lead">
+        From an exposed-aggregate driveway on a Cardinia Lakes new build through to a full
+        bluestone alfresco patio with engineered retaining wall on a Beaconsfield slope.
+        We do the design, the council crossover permit, the base prep and the build.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/driveway-paving/">
+          <div class="svc-icon" aria-hidden="true">&#9678;</div>
+          <h3>Driveway paving</h3>
+          <p>Block paving, exposed aggregate, stencilled concrete and full segmental driveways. CCAA-aligned exposed-aggregate mix, SL82 mesh reinforcement, Cardinia Shire crossover permit included. ~$90&ndash;$200/m&sup2;.</p>
+          <span class="svc-link">See driveway paving &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/patio-paving/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Patio paving</h3>
+          <p>Backyard entertaining patios in bluestone, sandstone, travertine and porcelain. Polymeric-sanded joints, compacted Class 3 base, edge restraints. The flat-in-year-10 spec, not the lifted-pavers-in-year-3 spec. ~$140&ndash;$260/m&sup2;.</p>
+          <span class="svc-link">See patio paving &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-surrounds/">
+          <div class="svc-icon" aria-hidden="true">&#9784;</div>
+          <h3>Pool surrounds</h3>
+          <p>Non-slip natural stone and porcelain pavers rated to R11 / P5. Bluestone, granite, sandstone and through-coloured porcelain. Compliant pool-zone falls, chemical-safe edging, bullnose copers. ~$180&ndash;$280/m&sup2;.</p>
+          <span class="svc-link">See pool surrounds &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/retaining-walls/">
+          <div class="svc-icon" aria-hidden="true">&#9618;</div>
+          <h3>Retaining walls</h3>
+          <p>Engineered to AS 4678. Bluestone, sandstone, brick, segmental block. Structural engineer drawings for anything over 1m retained, full agdrain and 20mm drainage-rock backfill. ~$300&ndash;$600/m&sup2; face area.</p>
+          <span class="svc-link">See retaining walls &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/segmental-paving/">
+          <div class="svc-icon" aria-hidden="true">&#9608;</div>
+          <h3>Segmental paving</h3>
+          <p>Repair, re-lay and extend existing block, brick or segmental paving. Lift, regrade base, re-bed and polymeric-sand the joints. Cheaper than full replacement, faster, often invisible joins. ~$60&ndash;$140/m&sup2;.</p>
+          <span class="svc-link">See segmental paving &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Completed paved patio and entertaining area" loading="lazy" decoding="async" />
+    <figcaption>Concrete, exposed-agg, natural stone — done right.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why an Officer paving specialist</span>
+      <h2>Three things every Officer paving project needs to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>The Cardinia Shire crossover permit.</h3>
+          <p>
+            Any driveway work that crosses the council kerb, footpath or nature strip
+            needs a Cardinia Shire vehicle-crossing (crossover) permit. Application fee
+            ~$200&ndash;$350, plus the crossover slab must be poured to council&rsquo;s
+            IPWEA-aligned spec (125mm thick, SL82 mesh, set widths). New-build estates
+            in Officer 3809 (Arena, Heritage Springs, Timbertop) already have a
+            developer-built crossover &mdash; but widening single to double, or
+            replacing a damaged one, needs a fresh permit. We lodge the application,
+            book the council inspection and pour to spec.
+          </p>
+        </div>
+        <div>
+          <h3>Reactive-clay base preparation.</h3>
+          <p>
+            Officer sits on Class M to Class H reactive clay (AS 2870 mapped).
+            Seasonal swell of 20&ndash;40mm cracks unreinforced slabs and lifts
+            poorly-bedded pavers within 2&ndash;5 years. The fix is base, not
+            luck: <strong>100mm minimum compacted Class 3 crushed rock</strong>
+            under all paving, SL82 mesh in concrete driveways, polymeric-sand
+            in all paver joints (not white silica sand), and proper edge restraints.
+            We compact to 95% MMDD before any bedding sand goes down &mdash; that&rsquo;s
+            the difference between flat-in-year-10 and tripping-hazard-in-year-3.
+          </p>
+        </div>
+        <div>
+          <h3>Drainage spec on a sloping block.</h3>
+          <p>
+            Officer and Beaconsfield blocks slope. Patios, pool surrounds and
+            retaining walls all need designed drainage or they fail. We default
+            to: <strong>1:80 minimum fall</strong> away from house and toward
+            grates, polymeric-sand joints (water-shedding), 100mm sock-wrapped
+            ag-drain behind every retaining wall, 20mm clean drainage rock in
+            the first 300mm of wall backfill (not site clay), and grated linear
+            drains where pool-zone slope toward the house. AS 3727 sets the
+            fall and crossfall spec for residential pavements &mdash; we follow it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        We service the Officer growth corridor and the wider Cardinia Shire. Most
+        of our weekly work is new-build driveways and back-yard entertaining patios
+        in Cardinia Lakes, Arena, Heritage Springs and Timbertop estates &mdash;
+        with retaining-wall work in Beaconsfield&rsquo;s sloping blocks and large-format
+        bluestone in older Pakenham streets.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Officer South</span>
+        <span class="area-pill area-pill-static">Arena Estate</span>
+        <span class="area-pill area-pill-static">Timbertop</span>
+        <span class="area-pill area-pill-static">Berwick Waters</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Exposed-aggregate concrete texture close-up" loading="lazy" decoding="async" />
+    <figcaption>Engineered base prep. Saw-cut control joints. 10-year warranty.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From site visit to polymeric-sanded joints &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free site visit</h3><p>On-site measure, check soil class, check slope/drainage, look at materials in your light. 45&ndash;60 min, no obligation.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Design &amp; quote</h3><p>Material samples + concept layout + fixed-price written quote within 7 days. Bluestone, sandstone, exposed-agg and segmental options if you want a comparison.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Permit &amp; engineering</h3><p>Cardinia Shire crossover permit for driveway kerb work. Structural engineer drawings for any retaining wall over 1m. We lodge everything.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Base &amp; lay</h3><p>Excavate, compact 100mm Class 3 base, screed bedding sand, lay pavers or pour concrete, polymeric-sand all joints, edge-restrain. 3 days&ndash;3 weeks depending on size.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Handover</h3><p>Council crossover inspection (driveways), engineer sign-off (walls over 1m), final wash-down, polymeric-sand re-set, 7-year workmanship warranty.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free on-site quote?</h2>
+        <p>45&ndash;60 minutes on-site. We measure, check soil, look at the slope, talk through materials honestly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Articles &amp; guides for Officer</h2>
+      <p>Practical reading from our jobs in Officer &mdash; what we charge, what to watch for, when a callout is worth it.</p>
+      <ul class="guides-list">
+          <li><a href="/clay-grading-officer/">Driveway grading on Officer clay — done right, or not done</a></li>
+          <li><a href="/concrete-vs-paver-officer/">Concrete vs paver vs stone in Officer — the honest cost breakdown</a></li>
+          <li><a href="/edge-restraint-officer/">Edge restraint in Officer — the detail that decides whether your pavers last 5 years or 30</a></li>
+          <li><a href="/permeable-paving-officer/">Permeable paving in Officer — stormwater credits, properly engineered</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

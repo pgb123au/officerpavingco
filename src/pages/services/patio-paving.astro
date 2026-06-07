@@ -1,0 +1,159 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bluestone vs sandstone vs travertine for an Officer patio — which is right?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bluestone (Australian basalt) is the heaviest, hardest, longest-lasting — a charcoal-grey, mostly-uniform paver that ages to a soft graphite over decades. Great for modern builds, perfect under outdoor furniture, $90-$140/m² supplied for 30mm pavers. Sandstone (Australian or Indian) is warmer, more textural, more colour variation (gold/cream/honey/rust mix). Looks beautiful in afternoon sun, slightly more porous so sealing every 5 years is sensible. $80-$130/m² supplied. Travertine (Turkish or Mexican) is creamy-beige with characteristic pitting, Mediterranean look, slightly cooler underfoot in summer because of the porosity. Needs careful sealing for stain resistance and shouldn't go under heavy point loads. $90-$160/m² supplied. For a 25m² Cardinia Lakes back patio installed: bluestone $9-12K, sandstone $8.5-11K, travertine $9-13K." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why polymeric sand and not regular silica sand in paver joints?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Polymeric sand is fine joint sand pre-mixed with a polymer binder that activates with water — once wetted, it sets to a flexible-rigid joint that doesn't wash out in rain, resists weed germination, and stops ant infestation. White silica sand washes out within 2-3 winters in Officer's rainfall, opens the joints, lets water under the pavers and lifts them within 4-5 years. Polymeric sand (Techniseal, EnviroSAND, Adbri Pavelock) costs ~$80-$120 per 22kg bag (covers ~12m² of joints) versus $15 per 20kg silica sand — but adds 15-20 years to the patio's flat-life. We use polymeric on every paving job we lay, no exceptions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit for a paved back patio in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Generally no — paved patios at natural ground level are exempt from a Cardinia Shire building permit. Exceptions: (1) if the patio sits on top of a retaining wall over 1m high (the wall needs a permit), (2) if you're in a Heritage Overlay (parts of older Pakenham), or (3) if the patio drainage changes the natural overland flow toward a neighbour's property. Most Cardinia Lakes / Officer / Beaconsfield back patios are straightforward exempt work. We check the planning scheme on the address at quote stage so you know before signing." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a paved patio take to build in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typical 25m² back-yard patio: 5-7 working days. Day 1-2: excavation, base prep (100mm Class 3 crushed rock, compacted in lifts), edge restraint frame. Day 3: bedding sand screed, pavers laid to falls (1:80 minimum away from house). Day 4: cuts around edges, paving completion. Day 5: polymeric sand swept into joints, mist-wetted, set. Day 6-7: cure time, final wash-down, jet-wash if needed. Larger 40-50m² patios run 7-10 days. We work Mon-Sat and almost never need to come back for snagging — the polymeric joint setting is the only weather-sensitive step." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I lay pavers over my existing concrete slab?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sometimes — if the existing slab is structurally sound, well-drained, has the right falls, and we can deal with the height build-up (typically 30-50mm of paver + bedding adds enough height to need step or threshold adjustments). The cheap and dirty option is glue pavers down with thinset adhesive (~$60/m² installed on top of existing slab cost). The proper option is a thin-bed mortar (~$90-$120/m² on top of slab). Either is cheaper than full demolition and rebuild but only works if the slab is in good shape — cracked, settled or wrong-falls slabs need replacing properly. We assess at the site visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the right fall on a paved patio away from the house?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 3727 (residential pavements) sets a minimum 1:80 fall away from the house wall for paved surfaces — that's 12.5mm fall per 1m of paving. We default to 1:60 (16.7mm per metre) where space allows, because polymeric-sand joints aren't perfectly waterproof and you want water gone from the slab quickly. Falls also need to direct water to a drainage point, not just away from the house — that's often a grated linear drain at the patio edge, a spoon-drain into the lawn, or a sump connected to the existing stormwater. Getting the falls wrong is the most common DIY-patio failure we see — water pools at the house wall, wets the foundation, causes movement." }
+    }
+  ]
+};
+---
+<Layout
+  title="Patio Paving Officer | Bluestone, Sandstone, Travertine | (03) 9003 0108"
+  description="Patio paving for Officer, Cardinia Lakes, Beaconsfield, Pakenham — bluestone, sandstone, travertine and porcelain. Polymeric-sanded joints, AS 3727 falls, edge restraints. Flat-in-year-10 spec."
+  canonical="https://officerpavingco.com.au/services/patio-paving/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Bluestone, sandstone, travertine, porcelain</span>
+      <h1>Patio paving in <span class="accent">Officer &amp; Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        Back-yard entertaining patios laid in natural stone &mdash; Australian bluestone,
+        sandstone, granite, Turkish travertine &mdash; or porcelain pavers. Polymeric-sanded
+        joints, compacted Class 3 base, AS 3727 falls, proper edge restraints. The full
+        flat-in-year-10 spec, not the lifted-pavers-in-year-3 spec.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The four patio materials we lay most.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Bluestone (Australian basalt):</strong> Charcoal-grey, dense, mostly uniform, ages to soft graphite over decades. The default for modern builds and the longest-lasting. ~$90&ndash;$140/m&sup2; supplied for 30mm pavers, ~$180&ndash;$220/m&sup2; installed.</li>
+          <li><strong>Sandstone (Australian or Indian):</strong> Honey-gold to rust mix, textural, warm in afternoon light. Slightly porous &mdash; benefits from a penetrating sealer every 5 years. ~$80&ndash;$130/m&sup2; supplied, ~$160&ndash;$200/m&sup2; installed.</li>
+          <li><strong>Travertine (Turkish or Mexican):</strong> Creamy-beige with characteristic pitting, Mediterranean feel, cooler underfoot in summer. Needs sealing for stain resistance. ~$90&ndash;$160/m&sup2; supplied, ~$170&ndash;$240/m&sup2; installed.</li>
+          <li><strong>Porcelain pavers (20mm format):</strong> Through-coloured, frost-proof, zero porosity, slip-rated to R11. Increasingly popular for pool surrounds and modern alfresco. ~$110&ndash;$180/m&sup2; supplied, ~$200&ndash;$260/m&sup2; installed.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why we polymeric-sand every joint (and why most local jobs don&rsquo;t).</h3>
+        <p>
+          The joint between pavers does two structural jobs: it stops sideways
+          movement, and it stops water from getting under the pavers and washing
+          out the bedding sand. White silica sand &mdash; the cheap default &mdash;
+          washes out within 2&ndash;3 Officer winters, opens the joints, lets
+          water and ants under the pavers, and lifts them within 4&ndash;5 years.
+          <strong>Polymeric sand</strong> (Techniseal, EnviroSAND, Adbri Pavelock)
+          is fine joint sand pre-mixed with a polymer binder. Sweep it dry into
+          joints, mist-wet it, the polymer activates and sets to a flexible-rigid
+          joint that resists rain wash-out, weed germination and ant infestation.
+          ~$80&ndash;$120 per 22kg bag covering ~12m&sup2; of joints. We use
+          polymeric on every paving job, no exceptions.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Drainage falls &mdash; AS 3727 compliant.</h3>
+        <p>
+          Every paved patio needs a minimum <strong>1:80 fall away from the
+          house wall</strong> (12.5mm per metre). We default to 1:60 where space
+          allows. Falls also need to direct water to a drainage point &mdash;
+          grated linear drain at the patio edge, spoon-drain into the lawn or
+          sump connected to existing stormwater. Getting the falls wrong is the
+          most common DIY-patio failure: water pools at the house wall, wets the
+          slab edge, and causes foundation movement within a few seasons.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Edge restraints &mdash; the bit that stops creep.</h3>
+        <p>
+          Without an edge restraint the perimeter pavers slowly walk outward
+          under load &mdash; especially in the high-traffic doorway zone. We
+          install one of three restraint types depending on the look: concrete
+          haunching (hidden under turf line, strongest), aluminium snap-edge
+          (modern minimal look), or a soldier course of pavers bedded in mortar
+          (traditional, visible). Without restraint, even a polymeric-sanded
+          patio loses its edge geometry inside 5 years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical patio pricing (Officer 2026).</h3>
+        <ul>
+          <li>25m&sup2; bluestone back patio installed: $7,500&ndash;$11,500</li>
+          <li>25m&sup2; sandstone back patio installed: $6,800&ndash;$10,500</li>
+          <li>25m&sup2; travertine back patio installed: $7,500&ndash;$12,000</li>
+          <li>25m&sup2; porcelain back patio installed: $8,500&ndash;$12,500</li>
+          <li>40m&sup2; alfresco-extension patio in bluestone: $11,500&ndash;$16,500</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Honest tradeoffs.</h3>
+        <ul>
+          <li><strong>Natural stone has natural variation.</strong> Sandstone batches vary in colour mix; bluestone has occasional lighter inclusions. We lay from multiple pallets blended to even the look out, but you&rsquo;re buying the natural product, not a printed one.</li>
+          <li><strong>Sealers wear off.</strong> Sandstone and travertine want a refresh penetrating-sealer coat every 4&ndash;6 years. Bluestone and porcelain don&rsquo;t.</li>
+          <li><strong>Polymeric joints need re-set if a paver is lifted later.</strong> Once cured the joint is rigid; you can&rsquo;t just lift a paver without breaking the joint either side. Plan service trenches before laying.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free patio paving consultation.</h2>
+        <p>Stone samples on-site in your own light. Honest cost-and-care comparison across all four materials.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

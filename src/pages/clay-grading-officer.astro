@@ -1,0 +1,242 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What classification of clay is Officer on?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most of Officer, Officer South, Heritage Springs and the new Arena Estate sit on Class H to H1 reactive clay under AS 2870 (Residential slabs and footings) classification. That's 'highly reactive' — characteristic surface movement of 40-60mm between wet and dry seasons in the worst pockets, 20-40mm typical. The clay's seasonal swell and shrink is what cracks driveways, lifts paving and breaks the slab edge on poorly built homes in the area. A soil report from your home build will state the class explicitly — if you can find that report, share it with us at quote stage, it makes our base spec more precise." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are articulation joints under AS 2870 and why do they matter for driveways?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 2870 (Residential slabs and footings) specifies articulation joints — deliberate, engineered crack points in a slab — at 3-4m centres on Class H/H1 reactive clay sites. The principle is simple: the slab WILL move with the clay; if you don't tell it where to crack, it will crack randomly across the surface. Articulation joints are full-depth saw-cuts (not surface scoring) that create planned, straight, controllable crack lines. On a 60sqm driveway in Officer, that's typically 4-6 joints. They're filled with a flexible polyurethane sealant after curing — they look like deliberate design features and they stop random cracking dead." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about AS 3600 and AS 3727 — when do those apply to a driveway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 3600 (Concrete structures) governs the structural design of the slab itself — reinforcement spacing, cover, concrete grade. For a residential Officer driveway we're working to 25 MPa concrete minimum (often 32 MPa for crossovers), SL82 mesh with 30mm cover from the bottom face. AS 3727 (Residential pavements) governs the base preparation, drainage and finish quality for the pavement system as a whole — base thickness, compaction, fall to drain. We work to all three on every job: AS 2870 for clay-class slab movement, AS 3600 for structural concrete, AS 3727 for the pavement system. Quotes that don't reference these standards are usually leaving out the bits that fail first." }
+    },
+    {
+      "@type": "Question",
+      "name": "What cross-fall does a clay-block driveway need in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Minimum 1:80 cross-fall (1.25%) from the house side to the kerb/garden side, or to a centreline drain on wide driveways. On heavy clay we prefer 1:60 (1.67%) where the lot geometry allows — slightly steeper means surface water clears faster and the slab edge doesn't sit wet against the building. Longitudinal fall toward the street is typically dictated by the existing crossover height vs the garage threshold and runs 1:50 to 1:80. The goal is to never have ponding water sitting on the slab — water on the surface is the start of every reactive-clay issue further down." }
+    },
+    {
+      "@type": "Question",
+      "name": "What won't you quote on Class H clay?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We won't quote a slab pour on Officer Class H clay without: a 100mm compacted Class 3 base over the subgrade, SL82 reinforcement minimum (often SL92 for crossovers and heavily trafficked areas), articulation joints at 3-4m centres per AS 2870, moisture barrier where the slab abuts the building, and a defined stormwater path. We won't pour over uncompacted spoil, over an unprepared site that's been sitting wet for weeks, or onto a subgrade that hasn't had organic material stripped. We've seen too many year-3 failures where 'we'll save you a thousand bucks' shortcuts turn into a $10,000 re-pour. The base prep is 60% of a driveway's lifespan in Officer." }
+    }
+  ]
+};
+---
+<Layout
+  title="Driveway grading on Officer clay — AS 2870 articulation joints | (03) 9003 0108"
+  description="Driveway grading for Class H reactive clay in Officer 3809. AS 2870 articulation joints, AS 3600 reinforcement, AS 3727 pavement spec, 1:80 cross-fall to stormwater. What we won't quote."
+  canonical="https://officerpavingco.com.au/clay-grading-officer/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Class H Reactive Clay &middot; AS 2870 &middot; Officer 3809</span>
+      <h1>Driveway grading on <span class="accent">Officer</span> clay — done right, or not done.</h1>
+      <p class="hero-sub">
+        Officer&rsquo;s Class H reactive clay moves 20&ndash;40mm seasonally.
+        Pour a slab over it without articulation joints, proper
+        reinforcement and a defined stormwater path and you&rsquo;ll see
+        random surface cracking by year 4. There&rsquo;s no creative
+        engineering around it — there&rsquo;s the spec that works on
+        reactive clay, and there&rsquo;s the slab that fails.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What you&rsquo;re building on</span>
+      <h2>Class H/H1 reactive clay across Officer.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Officer, Officer South, Heritage Springs and the newer Arena
+          Estate are all mapped Class H to H1 under AS 2870 (Residential
+          slabs and footings). That&rsquo;s the highly-reactive
+          classification — characteristic surface movement of
+          40&ndash;60mm season-to-season in worst pockets, more typically
+          20&ndash;40mm. The site investigation for your home build will
+          contain the exact classification; if you can dig out that
+          soil report and share it with us at quote stage, our base spec
+          gets sharper and we can sometimes save you money on
+          over-engineered work that isn&rsquo;t needed for your specific
+          spot.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The seasonal cycle that does the damage.</h3>
+        <p>
+          From May through August, Officer clay wets up and swells. From
+          December through February it dries out and shrinks. The movement
+          isn&rsquo;t uniform across a lot — it&rsquo;s strongest where
+          trees have been removed (old root zones dry out then re-saturate),
+          near downpipes that concentrate water, and at the edges of a
+          driveway where the slab meets unprotected garden bed. A slab
+          that&rsquo;s 4m wide will see one edge moving while the other
+          edge is stable. That differential is what cracks unjointed slabs.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why Officer South 1990s driveways are all failing now.</h3>
+        <p>
+          The 1990s building cycle in Officer South was before AS 2870 was
+          widely understood at residential trade level. Driveways got
+          poured at 75mm with no mesh, no joints, on minimal base. They
+          survived 8&ndash;15 years. They&rsquo;re now at end-of-life en
+          masse — random cracking, slab corners broken off, edges
+          subsided. Half our 2026 work is replacing that generation of
+          driveway with a properly engineered modern equivalent.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Articulation joints</span>
+      <h2>AS 2870 articulation joints &mdash; the non-negotiable.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          The single most important detail on an Officer driveway is the
+          articulation joint pattern. AS 2870 requires planned crack-control
+          joints at <strong>3&ndash;4 metre centres</strong> on Class H/H1
+          sites. The principle is brutal in its honesty: the slab IS going
+          to crack. If you don&rsquo;t pre-define where, the clay will
+          decide for you — usually across the middle of the parking bay,
+          diagonally, ugly.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What a proper articulation joint looks like.</h3>
+        <ul>
+          <li>Full-depth saw-cut (not a surface score line) within 18&ndash;24 hours of pour.</li>
+          <li>Cut depth at least one-quarter of slab depth — for a 100mm slab that&rsquo;s 25&ndash;30mm.</li>
+          <li>Straight line, perpendicular to the long axis on a typical driveway.</li>
+          <li>Spaced 3&ndash;4m apart, with no panel longer than 1.5&times; its width.</li>
+          <li>Filled with a flexible polyurethane sealant after 28-day cure — never rigid mortar.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Reinforcement that bridges the joints.</h3>
+        <p>
+          Under AS 3600 (Concrete structures), the SL82 mesh sits at
+          mid-slab depth, continuous across articulation joints. The
+          mesh holds the slab together during clay movement so the joint
+          opens by fractions of a millimetre, not catastrophically. For
+          crossovers and heavy-vehicle areas we step up to SL92 mesh and
+          125mm slab depth per Council spec.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stormwater &amp; cross-fall</span>
+      <h2>The 1:50 to 1:80 rule.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Water management is the second half of Officer driveway design.
+          A perfectly jointed slab that ponds water at one corner will
+          still fail — the saturated subgrade clay swells locally, lifts
+          the slab edge, and you get a crack right where the joint
+          should have done its job.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Cross-fall.</h3>
+        <p>
+          Minimum 1:80 (1.25%) cross-fall from house side to street side
+          on a typical Officer driveway. We prefer 1:60 (1.67%) where lot
+          geometry allows. Water has to clear the slab in minutes, not
+          sit in shallow puddles for hours.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Longitudinal fall and stormwater cut-off.</h3>
+        <p>
+          Longitudinal fall toward the street typically sits between
+          1:50 and 1:80 depending on the height difference between the
+          existing crossover and the garage threshold. Where the lot
+          falls toward the house, we install a stormwater cut-off — a
+          grated linear drain set across the driveway near the garage,
+          piped to the legal point of discharge, so water never reaches
+          the building line.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Edge detail and ag-drain.</h3>
+        <p>
+          The garden-bed edge of an Officer driveway gets an ag-drain —
+          a perforated subsoil drain wrapped in geotextile, set at slab
+          edge level and piped to legal discharge. This stops the
+          garden-bed moisture from saturating the clay at the slab edge
+          and lifting the slab from underneath. It&rsquo;s a $400&ndash;$700
+          item that saves a $3,000 re-pour at year 6.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we won&rsquo;t do</span>
+      <h2>Quotes we walk away from.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Some Officer paving enquiries we politely decline. Not because
+          we can&rsquo;t do the work — because the spec being asked for
+          will fail, and we&rsquo;d rather lose the job than put our
+          name on a year-3 disaster.
+        </p>
+
+        <ul>
+          <li>Slabs poured on uncompacted spoil or wet subgrade — base prep is non-negotiable.</li>
+          <li>75mm slab on Class H clay with no mesh — the original Officer South spec that&rsquo;s failing en masse now.</li>
+          <li>Articulation joints &gt;5m apart on reactive clay — guaranteed random cracking.</li>
+          <li>Driveways graded toward the house with no stormwater cut-off.</li>
+          <li>Mortar-bed stone over a slab without expansion joints in the stone matching the slab joints below.</li>
+        </ul>
+
+        <p style="margin-top: 1.5rem;">
+          We&rsquo;re a VBA-registered builder with the Domestic Building
+          Insurance and Concrete Institute of Australia practice
+          alignment to back what we quote. That registration is the
+          reason we won&rsquo;t put a signature on work that won&rsquo;t
+          survive Officer clay.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Officer driveway site visit.</h2>
+        <p>
+          We&rsquo;ll inspect the lot, identify your AS 2870 site class,
+          set out the articulation joint pattern, work out the stormwater
+          path, and quote the full AS 3727 pavement spec. No charge, no
+          shortcuts.
+        </p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="mailto:quotes@officerpavingco.com.au">Email quotes@officerpavingco.com.au</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

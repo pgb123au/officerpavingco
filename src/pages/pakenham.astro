@@ -1,0 +1,170 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the most common Pakenham paving job?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Replacement work on 1990s-2000s era driveways and patios that have failed on Class M reactive clay. Older Pakenham streets (around John Street, Henry Street, Pakenham Hills) have housing stock 25-40 years old where the original concrete driveway is cracked through and the back patio is uneven and weed-infested. Typical job: lift the failed concrete or paving, full base rebuild to current spec (100mm Class 3 compacted, moisture barrier), new driveway in exposed aggregate or segmental block, new patio in bluestone or sandstone. Cost range $15,000-$30,000 for a full driveway-plus-patio replacement. Newer Pakenham streets in Lakeside Boulevard / Heritage Springs-adjacent estates are more like the Cardinia Lakes new-build pattern." }
+    },
+    {
+      "@type": "Question",
+      "name": "Pakenham has heritage overlays — does that affect paving?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes for a few specific streets — parts of old Pakenham township (around Princes Highway, Henry Street, John Street) have Heritage Overlay (HO) listings that require Council planning approval before changes to the front-of-house presentation. That includes front driveway material choice. For an HO-listed property we usually recommend exposed aggregate (closer to original concrete look) or stencilled-concrete reproducing original brick-pattern paving, rather than modern segmental block. We check the planning scheme at the property address before quoting. Application fees ~$300-$600 + 4-6 week planning approval timeline if needed. Most Pakenham properties aren't HO-listed — the rule only applies to a few specific historic streets." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do larger acreage paving in Pakenham Upper?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pakenham Upper is rural-residential acreage (1-10 acre blocks) above the township. Typical projects are larger format: 100-150m² driveways (often gravel-to-paved upgrades), wraparound veranda paving (60-100m²), large alfresco/pool surround integrations. Materials lean towards natural bluestone, granite or sandstone — owners on acreage typically have 30+ year horizons and budget accordingly. Cost per m² same as our normal pricing but project totals are larger: $25,000-$80,000 range for full hardscape packages. Reactive-clay engineering still applies; sometimes Class H ratings with deeper footings on retaining work." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Pakenham township and Pakenham Lakeside estates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pakenham township (the original 1990s housing around the railway station, John Street, Henry Street) is mostly 600-1,000m² blocks with brick-veneer or weatherboard houses 25-40 years old. Paving work is usually replacement-driven — failed driveways and patios needing rebuild. Lakeside (Lakeside Boulevard, Lakeside Square) and Pakenham Heritage Springs are newer 2010s estates with 350-600m² blocks and 4-bed contemporary builds. Paving work there is more like Cardinia Lakes — new build patio + driveway packages, no existing failure, design-from-scratch. Both markets, different briefs, same crew. We work across both routinely." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do older Pakenham concrete driveways crack so badly?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three reasons that compound over 25 years on Class M reactive clay: (1) original construction often poured 75mm thick with no mesh and no control joints — by 1990s standards that was acceptable, by 2026 standards it's a guaranteed failure; (2) no moisture barrier means base moisture wicked into slab over decades, weakening the cement matrix from below; (3) seasonal clay heave (20-40mm annually) over 25 winters compounds into wide, random crack patterns. The fix isn't crack-fill (that's cosmetic), it's full demolition and re-pour to current AS 3727 spec — 100mm slab, SL82 mesh, 100mm Class 3 base, moisture barrier, saw-cut control joints. A $11,000 replacement now is cheaper than 5 more years of cosmetic patching." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match brick patterns in older Pakenham streets?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often yes. 1990s/2000s Pakenham used common brick formats (Boral, Austral Bricks, Brikmakers) — common red, common cream, gault grey, gum-blossom red. Most are still in production or have very close current matches. For Heritage Overlay properties we sometimes also do stencilled concrete reproducing the original brick pattern as a Council-acceptable alternative when matched brick isn't sourceable. We bring samples to the site visit so you can compare against existing house brick in your own light before signing." }
+    }
+  ]
+};
+---
+<Layout
+  title="Paving & Stonemasonry Pakenham | Driveways, Patios, Replacement | (03) 9003 0108"
+  description="Paving and stonemasonry for Pakenham 3810 — exposed-aggregate driveway replacement, bluestone patios, engineered retaining walls. Heritage Overlay aware. Class M reactive-clay base spec."
+  canonical="https://officerpavingco.com.au/pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pakenham 3810 &middot; Lakeside &middot; Pakenham Upper</span>
+      <h1>Paving &amp; stonemasonry in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        Pakenham splits across three markets &mdash; older 1990s/2000s township
+        streets needing replacement of failed concrete driveways and patios,
+        newer Lakeside-style new-build estates wanting bluestone patios over
+        exposed-aggregate driveways, and Pakenham Upper acreage with larger-format
+        hardscape projects. We work across all three.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Pakenham</span>
+      <h2>The Pakenham paving story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Replacement work dominates older township streets.</h3>
+        <p>
+          1990s/2000s Pakenham streets (John Street, Henry Street, Pakenham Hills,
+          Princes Highway south side) have housing stock 25&ndash;40 years old.
+          Original driveways were poured at 75mm thick with no mesh and no
+          control joints &mdash; acceptable by then-standards, guaranteed failure
+          by 2026 standards. The current pattern across these streets:
+          <strong>full driveway replacement to current AS 3727 spec</strong>
+          (100mm slab, SL82 mesh, 100mm Class 3 base, moisture barrier, saw-cut
+          joints) at $9,500&ndash;$13,500 for a typical 60m&sup2; double. Crack-fill
+          is cosmetic and lasts 18 months; replacement is the actual answer.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Heritage Overlay aware.</h3>
+        <p>
+          A few historic streets in old Pakenham township (around Princes Highway,
+          Henry Street, John Street) have <strong>Heritage Overlay (HO) listings</strong>
+          requiring Council planning approval before changes to front-of-house
+          presentation. That includes front driveway material choice. For an
+          HO-listed property we recommend exposed-aggregate (closer to original
+          concrete look) or stencilled-concrete reproducing original brick-pattern
+          paving over modern segmental block. Planning application fees
+          ~$300&ndash;$600 + 4&ndash;6 week approval timeline. We check the
+          planning scheme at the property address before quoting.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Newer Lakeside / Heritage Springs-adjacent estate work.</h3>
+        <p>
+          Lakeside Boulevard, Lakeside Square and Pakenham Heritage Springs are
+          2010s estates with 350&ndash;600m&sup2; blocks and 4-bed contemporary
+          builds. Paving work here is the new-build pattern &mdash; design-from-scratch
+          driveway + alfresco patio + side path packages, typically
+          $18,500&ndash;$28,500 for the lot. Same Class M reactive-clay
+          engineering as Cardinia Lakes.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pakenham Upper acreage.</h3>
+        <p>
+          Pakenham Upper (above the township) is rural-residential acreage
+          &mdash; 1&ndash;10 acre blocks. Projects scale up: 100&ndash;150m&sup2;
+          driveways (often gravel-to-paved upgrades), wraparound veranda paving,
+          large alfresco/pool surround integrations. Materials lean towards
+          natural bluestone, granite or sandstone with 30+ year horizons. Cost
+          per m&sup2; same as standard pricing; project totals run
+          $25,000&ndash;$80,000 for full hardscape packages. Reactive-clay
+          engineering still applies; sometimes Class H ratings with deeper
+          footings on retaining work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Brick-matching for older streets.</h3>
+        <p>
+          1990s/2000s Pakenham used common brick formats (Boral, Austral Bricks,
+          Brikmakers) &mdash; common red, common cream, gault grey, gum-blossom
+          red. Most are still in production or have close current matches. We
+          bring samples to the site visit to compare against existing house brick
+          in your own light. For HO properties without sourceable matched brick,
+          stencilled concrete reproducing the original pattern is a Council-acceptable
+          alternative.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Pakenham jobs.</h3>
+        <ul>
+          <li>60m&sup2; driveway replacement (1990s slab demolition + new exposed agg + crossover): $11,500&ndash;$15,500</li>
+          <li>Township brick-match patio rebuild (failed 25-year-old paving lifted, base rebuilt, brick-matched re-lay): $7,500&ndash;$11,500</li>
+          <li>Lakeside new-build driveway + alfresco + side-path package: $18,500&ndash;$28,500</li>
+          <li>Pakenham Upper acreage wraparound veranda paving 80m&sup2; in bluestone: $17,500&ndash;$24,500</li>
+          <li>HO planning-approved stencilled-concrete brick-pattern driveway: $9,500&ndash;$13,000 + planning fees</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Pakenham paving quote.</h2>
+        <p>Replacement of failed concrete + Heritage Overlay-aware design + brick-matched township work.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

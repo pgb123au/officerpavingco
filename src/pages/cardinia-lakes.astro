@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the typical Cardinia Lakes paving project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Lakes is young-family country — mortgage-belt couples in new 4-bed builds on 350-500m² lots, kids under 10, both parents working. The default 2026 paving package is: exposed-aggregate driveway (60m², $9,500-$13,500), bluestone or sandstone back alfresco patio (20-25m², $6,500-$10,500), occasionally a small segmental-block retaining wall to step the back-yard slope (under 1m, $2,500-$4,500). Total package: $18,500-$28,500 depending on stone choice and any retaining. Owners want low-maintenance materials and don't want to be hosing pavers every weekend." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do new Cardinia Lakes driveways need such heavy reinforcement?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Lakes was built on what used to be wetland-edge clay (the lakes themselves are an engineered feature of the development). The underlying soil is Class M to occasionally Class H reactive clay. Standard developer-spec driveways with no mesh and minimal base routinely crack within 2-3 years. Our spec for Cardinia Lakes lots: 100mm slab with SL82 mesh on 100mm compacted Class 3 base with 75µm moisture barrier and saw-cut control joints at 4m intervals. For Class H lots (engineer-confirmed) we step up to 125mm slab with SL92 mesh. Cost difference vs minimum spec: ~$15-$25/m² more. Crack-prevention value over 15 years: priceless." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a Cardinia Lakes pool surround integrate with the alfresco patio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — and it's the cleanest visual outcome when the same paver continues from alfresco zone to pool surround. Two design constraints: (1) the immediate pool-edge band needs P4/R11 slip-rated finish (honed bluestone or sand-blasted sandstone both work), so we'll often use a slightly different finish of the same stone right at the pool edge; (2) the alfresco patio and pool surround want falls in opposite directions — patio falls away from house, pool surround falls away from pool — so the high point sits between them. We design the level transitions in advance, often with a grated linear drain at the high-point line." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do small-block landscaping where the patio is competing with the lawn?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — small-block design is exactly the Cardinia Lakes problem. A 400m² lot with the house taking 220m², garage 36m², side setbacks 80m², front lawn 30m² leaves about 35m² for the back yard. A 25m² patio + retaining + drainage eats most of that. We design with the trampoline/swing-set/dog-run in mind — the patio shouldn't consume the kids' play space. Often the right call is a smaller patio (15-18m²) plus a stepping-stone path through the lawn rather than fully paving everything. We're happy to recommend less paving if the brief calls for it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about the Cardinia Lakes path-network — connecting paths from driveway to back patio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most Cardinia Lakes lots want a side path connecting front driveway to back patio (so you can wheel bins, mowers, kids' bikes without going through the house). Typical spec: 900-1200mm wide segmental block or matched-paver path, polymeric-sanded joints, 100mm compacted Class 3 base. Cost: $130-$180/m². 12m of side path: $1,400-$2,200. If your existing path is concrete and cracked, lift-and-replace with segmental is usually similar cost to repair-and-seal and looks 100% better." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the full Cardinia Lakes paving package take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Driveway alone: 5-7 days (excavation, base, formwork, pour, cure, control-joint cut). Back patio alone: 5-7 days. Combined driveway + patio + side path package: typically 12-16 working days spread over 3-4 weeks (we don't run both crews simultaneously on a small lot — too cramped). Cardinia Shire crossover inspection adds 3-5 days of waiting depending on Council schedule. We schedule pours for early-week so curing covers the working week, and we communicate daily on progress." }
+    }
+  ]
+};
+---
+<Layout
+  title="Paving & Stonemasonry Cardinia Lakes | Driveways, Patios, Retaining | (03) 9003 0108"
+  description="Paving and stonemasonry for Cardinia Lakes — exposed-aggregate driveways, bluestone alfresco patios, engineered retaining walls. Class M reactive-clay base spec. Family-friendly small-block design."
+  canonical="https://officerpavingco.com.au/cardinia-lakes/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Lakes &middot; Lakeside &middot; Arena-adjacent</span>
+      <h1>Paving &amp; stonemasonry in <span class="accent">Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        Cardinia Lakes is young-family country &mdash; mortgage-belt couples in new
+        4-bed builds with kids under 10, second incomes, busy lives. The default
+        2026 package is an exposed-aggregate driveway, a low-maintenance bluestone
+        or sandstone alfresco patio, and occasionally a small block retaining
+        wall to step the slope. Materials chosen so you&rsquo;re not hosing pavers
+        every weekend.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Cardinia Lakes</span>
+      <h2>The Cardinia Lakes paving story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Reactive-clay engineering is everything here.</h3>
+        <p>
+          Cardinia Lakes was built on former wetland-edge clay (the lakes
+          themselves are an engineered feature of the development). The
+          underlying soil is <strong>Class M to occasionally Class H reactive
+          clay</strong>. Standard developer-spec driveways with minimal base
+          and no mesh routinely crack within 2&ndash;3 years. Our default spec:
+          100mm slab, SL82 mesh, 100mm compacted Class 3 base, 75&micro;m
+          moisture barrier, saw-cut joints at 4m. For Class H lots we step up
+          to 125mm + SL92. Cost premium over minimum spec: ~$15&ndash;$25/m&sup2;.
+          Crack-prevention value over 15 years: enormous.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Small-block design that respects the kids&rsquo; play space.</h3>
+        <p>
+          A 400m&sup2; Cardinia Lakes lot with house (220m&sup2;), garage
+          (36m&sup2;), side setbacks (80m&sup2;) and front lawn (30m&sup2;)
+          leaves only ~35m&sup2; for back yard. A 25m&sup2; patio eats most
+          of that. We design with the trampoline / swing-set / dog-run in
+          mind &mdash; the patio shouldn&rsquo;t consume the kids&rsquo; play
+          space. Often the right call is a smaller patio (15&ndash;18m&sup2;)
+          plus a stepping-stone path through the lawn rather than fully
+          paving everything. Happy to recommend less paving when the brief
+          calls for it.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Low-maintenance is the brief.</h3>
+        <p>
+          Cardinia Lakes families don&rsquo;t want to be hosing pavers every
+          weekend. That means: <strong>bluestone or porcelain</strong> over
+          sandstone (less staining), polymeric-sanded joints (no weed
+          germination, no ant infestation), and gentle falls so debris washes
+          to the lawn edge rather than collecting at corners. Bluestone holds
+          its colour for life and shrugs off chlorine splash if you&rsquo;re
+          combining with a pool.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Side-path networks &mdash; the bit owners forget.</h3>
+        <p>
+          Most Cardinia Lakes lots want a side path connecting front driveway
+          to back patio so you can wheel bins, mowers and kids&rsquo; bikes
+          without going through the house. Typical: 900&ndash;1200mm wide
+          segmental block or matched-paver path, polymeric-sanded, on
+          compacted Class 3 base. Cost: $130&ndash;$180/m&sup2;. 12m side
+          path: $1,400&ndash;$2,200.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Cardinia Lakes jobs.</h3>
+        <ul>
+          <li>60m&sup2; exposed-agg driveway + crossover permit: $9,500&ndash;$13,500</li>
+          <li>20&ndash;25m&sup2; bluestone alfresco patio + grated linear drain: $6,500&ndash;$10,500</li>
+          <li>Side path 12m connecting driveway to back patio: $1,400&ndash;$2,200</li>
+          <li>Small segmental-block retaining wall (under 1m, garden-bed step): $2,500&ndash;$4,500</li>
+          <li>Full driveway + alfresco + side path package: $18,500&ndash;$28,500</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Cardinia Lakes paving quote.</h2>
+        <p>Low-maintenance materials honest cost comparison. Small-block design that keeps the kids&rsquo; play space.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

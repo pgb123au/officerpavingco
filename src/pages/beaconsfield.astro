@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is Beaconsfield retaining-wall work so common?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Beaconsfield sits on the foothills of the Dandenong Ranges — most blocks slope front-to-back or side-to-side, often by 2-4 metres across the depth of a standard lot. That means almost every paving project (driveway, patio, pool surround) involves a retaining wall to manage the level changes. Typical retained heights 0.6m-1.5m, occasionally 2m+ on the steeper Beaconsfield Upper blocks. All over 1m needs AS 4678 engineering and a Cardinia Shire building permit. We engage Cardinia-based structural engineers regularly — drawings add $800-$1,500 to a wall job, well worth it for a wall that's still vertical in 40 years." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the typical Beaconsfield Upper paving project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Acreage hardscape — 1-5 acre Beaconsfield Upper blocks with established brick or weatherboard homestead-style houses, mature gardens, and significant level changes. Typical project: 80-120m² driveway (often replacing original gravel with exposed aggregate or stamped concrete), engineered retaining walls to step the slope (face areas 30-60m²), large entertaining patio in bluestone or sandstone (40-70m²). Pricing ranges $40,000-$120,000 for the full hardscape package, often staged over 2-3 visits if budget is spread. Class M to occasionally Class H reactive clay; engineer involvement on every retaining wall." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do natural-stone driveways in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — large-format bluestone or granite paver driveways are the premium option for established Beaconsfield and Beaconsfield Upper properties. Bluestone driveway pavers ($180-$260/m² installed) hold colour for life, age beautifully, and pair with the heritage / weatherboard / brick aesthetic of older Beaconsfield homes better than modern exposed aggregate. Caveat: needs heavier base prep (often 150mm Class 3 base rather than 100mm because point loads from individual pavers are higher than from a continuous concrete slab), and joints must be polymeric-sanded plus regular re-sweeping over years. For a 70m² double driveway in bluestone: $14,500-$19,500 supplied and installed." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about drainage on Beaconsfield's sloping blocks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Drainage is the single biggest design issue on Beaconsfield work. Three rules: (1) all paving falls AWAY from the house at 1:60 minimum (we go steeper on the up-hill side); (2) every retaining wall has a 100mm sock-wrapped ag-drain at the heel running to a stormwater outlet — no exceptions; (3) inter-level transitions need grated linear drains or graded spoon-drains to catch sheet flow before it crosses to the next level. We design overland-flow paths at quote stage so heavy-rain events have somewhere to go that isn't the house slab. Cardinia Shire has stormwater capacity rules and you can be required to install on-lot detention for major paving works on existing properties — we check at quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Beaconsfield has older brick housing — can you match brick patterns?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Older Beaconsfield (around Old Princes Highway, Beaconsfield township) is 1970s-1990s brick veneer in common red, common cream, gum-blossom red — most still in production or with close current matches. We bring samples to the site visit to compare against existing house brick in afternoon sun. For Heritage Overlay properties (rare in Beaconsfield but exists in some township streets) we can also do stencilled-concrete reproducing original brick-pattern paving as a planning-approved alternative." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Beaconsfield paving + retaining project take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Small project (driveway-only on flat block, no retaining): 1-2 weeks elapsed. Standard project (driveway + 1m retaining wall + back patio): 3-5 weeks elapsed including permit and engineering waits. Large acreage project (full hardscape across 4-acre Beaconsfield Upper lot with multiple retaining walls and large entertaining areas): 8-14 weeks staged over multiple work phases. Critical path is usually engineer drawings (1-2 weeks) and building permit for walls over 1m (3-5 weeks). We can quote and schedule before engineering returns if you want to lock in the slot." }
+    }
+  ]
+};
+---
+<Layout
+  title="Paving & Stonemasonry Beaconsfield | Sloping Blocks, Retaining Walls | (03) 9003 0108"
+  description="Paving, stonemasonry and engineered retaining walls for Beaconsfield, Beaconsfield Upper — sloping-block specialists. Bluestone driveways, engineered AS 4678 retaining walls, large alfresco patios. Acreage and heritage homes."
+  canonical="https://officerpavingco.com.au/beaconsfield/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Beaconsfield &middot; Beaconsfield Upper</span>
+      <h1>Paving &amp; stonemasonry in <span class="accent">Beaconsfield</span>.</h1>
+      <p class="hero-sub">
+        Beaconsfield sits on the foothills of the Dandenongs &mdash; most blocks
+        slope 2&ndash;4 metres front-to-back. Almost every paving project
+        involves a retaining wall, and a lot of work here is large-format
+        bluestone driveways and engineered AS 4678 retaining systems on heritage
+        acreage blocks. Slope-aware design, drainage engineering on every job.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Beaconsfield</span>
+      <h2>The Beaconsfield paving story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Retaining walls everywhere.</h3>
+        <p>
+          Beaconsfield is foothill country &mdash; most blocks slope 2&ndash;4
+          metres across the depth of a standard lot, occasionally 5m+ on the
+          steeper Beaconsfield Upper acreage. That means almost every paving
+          project involves a retaining wall. Typical retained heights
+          0.6m&ndash;1.5m, occasionally 2m+. Anything over 1m needs
+          <strong>AS 4678 engineering and a Cardinia Shire building permit</strong>.
+          We engage Cardinia-based structural engineers regularly &mdash; drawings
+          add $800&ndash;$1,500 to the wall job and ensure the wall is still
+          vertical at year 40 not bulging at year 5.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Acreage hardscape (Beaconsfield Upper).</h3>
+        <p>
+          Beaconsfield Upper acreage (1&ndash;5 acre blocks) wants larger-format
+          projects: <strong>80&ndash;120m&sup2; driveways</strong> (often gravel
+          replaced with exposed aggregate or large-format bluestone), engineered
+          retaining walls (30&ndash;60m&sup2; face area), entertaining patios
+          (40&ndash;70m&sup2;). Materials lean towards natural bluestone, granite
+          or sandstone with 30+ year horizons. Full-package pricing
+          $40,000&ndash;$120,000, often staged over 2&ndash;3 visits across
+          a 12-month window if budget is spread.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Natural-stone driveways &mdash; the premium option.</h3>
+        <p>
+          Large-format <strong>bluestone or granite paver driveways</strong>
+          ($180&ndash;$260/m&sup2; installed) are the premium choice for
+          established Beaconsfield and Beaconsfield Upper properties. They hold
+          colour for life, age beautifully and pair with heritage/weatherboard/brick
+          aesthetics better than modern exposed aggregate. Heavier base prep
+          required &mdash; 150mm Class 3 base rather than 100mm because point
+          loads from individual pavers are higher than from continuous concrete
+          slab. 70m&sup2; double bluestone driveway: $14,500&ndash;$19,500.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Drainage is the single biggest design issue.</h3>
+        <ul>
+          <li><strong>All paving falls AWAY from the house</strong> at 1:60 minimum; steeper on the up-hill side</li>
+          <li><strong>Every retaining wall has 100mm sock-wrapped ag-drain at the heel</strong> running to a stormwater outlet &mdash; no exceptions</li>
+          <li><strong>Inter-level transitions need grated linear drains</strong> or graded spoon-drains to catch sheet flow before it crosses to the next level</li>
+          <li><strong>Overland-flow paths designed</strong> so heavy-rain events have somewhere to go that isn&rsquo;t the house slab</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Brick-matching for older streets.</h3>
+        <p>
+          Older Beaconsfield township (around Old Princes Highway and the
+          original 1970s/1980s brick-veneer streets) uses common red, common
+          cream, gum-blossom red &mdash; most still in production. We bring
+          samples to site visits to compare against house brick in afternoon
+          sun. Stencilled concrete reproducing brick pattern is available for
+          rare Heritage Overlay sites.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Beaconsfield jobs.</h3>
+        <ul>
+          <li>Driveway + 1m engineered retaining wall + back patio package: $25,000&ndash;$45,000</li>
+          <li>Bluestone driveway 70m&sup2; (premium Beaconsfield property): $14,500&ndash;$19,500</li>
+          <li>Acreage full hardscape (Beaconsfield Upper, 4-acre block): $40,000&ndash;$120,000 staged</li>
+          <li>Engineered segmental block retaining wall 1.5m × 12m face: $8,500&ndash;$12,500</li>
+          <li>Pool surround + paved entertaining zone on stepped block: $22,000&ndash;$35,000</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Beaconsfield paving quote.</h2>
+        <p>Slope-aware design, AS 4678 retaining-wall engineering included, drainage right first time.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

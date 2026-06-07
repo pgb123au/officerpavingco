@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Paving Quote | Officer, Cardinia Lakes, Pakenham | (03) 9003 0108"
+  description="Get a free on-site design consultation for your Officer, Cardinia Lakes, Beaconsfield, Pakenham or Heritage Springs driveway, patio, pool surround or retaining wall. 60-min visit + fixed quote within 7 days."
+  canonical="https://officerpavingco.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Consultation</span>
+      <h1>Book your free paving quote.</h1>
+      <p class="hero-sub">
+        Tell us about your block and what you want laid. We&rsquo;ll come on-site
+        for a 60-min consultation, check soil class (Class M/H reactive clay is
+        the local norm), check slope and drainage, talk through paver and stone
+        options. Fixed-price quote within 7 days. Free, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Officer 3809, Pakenham 3810, Beaconsfield 3807" />
+
+            <label for="format">What kind of paving are you considering?</label>
+            <select id="format" name="format">
+              <option value="not-sure">Not sure — want a recommendation</option>
+              <option value="driveway-exposed-agg">Driveway — exposed aggregate</option>
+              <option value="driveway-stencilled">Driveway — stencilled concrete</option>
+              <option value="driveway-block">Driveway — segmental block / brick</option>
+              <option value="driveway-bluestone">Driveway — bluestone or granite paver</option>
+              <option value="patio-bluestone">Patio — bluestone</option>
+              <option value="patio-sandstone">Patio — sandstone</option>
+              <option value="patio-travertine">Patio — travertine</option>
+              <option value="patio-porcelain">Patio — porcelain</option>
+              <option value="pool-surround">Pool surround — non-slip stone or porcelain</option>
+              <option value="retaining-wall">Retaining wall (engineered AS 4678)</option>
+              <option value="segmental-repair">Repair / re-lay existing segmental paving</option>
+              <option value="full-package">Full package — driveway + patio + retaining</option>
+            </select>
+
+            <label for="purpose">What is it for?</label>
+            <select id="purpose" name="purpose">
+              <option value="new-driveway">New driveway (no existing slab)</option>
+              <option value="replacement">Replacement of failed concrete or paving</option>
+              <option value="entertaining">Family entertaining / BBQ patio</option>
+              <option value="poolside">Poolside surround</option>
+              <option value="level-change">Level change on sloping block (retaining wall)</option>
+              <option value="property-value">Increase property value (selling)</option>
+              <option value="repair">Repair / re-lay existing pavers</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="size">Approximate size</label>
+            <select id="size" name="size">
+              <option value="not-sure">Not sure</option>
+              <option value="small">Small (under 20m²)</option>
+              <option value="medium">Medium (20–40m²)</option>
+              <option value="large">Large (40–80m²)</option>
+              <option value="extra-large">Extra large (80m²+)</option>
+              <option value="acreage">Acreage hardscape (multiple zones)</option>
+            </select>
+
+            <label for="crossover">Does the job need a Cardinia Shire crossover permit?</label>
+            <select id="crossover" name="crossover">
+              <option value="no">No — back-yard paving / patio / retaining only</option>
+              <option value="yes-developer">Yes — but developer crossover already in place</option>
+              <option value="yes-new">Yes — new or wider crossover needed</option>
+              <option value="yes-replacement">Yes — replacing damaged existing crossover</option>
+              <option value="not-sure">Not sure — please check at site visit</option>
+            </select>
+
+            <label for="timeframe">When do you want it laid?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">ASAP - next 2 months</option>
+              <option value="3-6-months">3-6 months</option>
+              <option value="summer">Before summer entertaining season</option>
+              <option value="12+">12 months or longer (research stage)</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Existing slab age, soil class if known, slope, budget range, deadline, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my consultation request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon–Sat 7am–6pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full Cardinia Shire — Officer, Cardinia Lakes, Beaconsfield, Pakenham, Heritage Springs, Berwick Waters, Heritage Springs and the Officer growth corridor.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site 60-min site visit</li>
+                <li>Soil-class check + base spec advice</li>
+                <li>Material samples (bluestone, sandstone, exposed agg)</li>
+                <li>Cardinia Shire crossover permit lodged (if needed)</li>
+                <li>AS 4678 retaining-wall engineering arranged</li>
+                <li>Fixed-price written quote within 7 days</li>
+                <li>7-year workmanship warranty</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

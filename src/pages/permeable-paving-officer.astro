@@ -1,0 +1,216 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Cardinia Shire give a stormwater credit for permeable paving in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Shire recognises permeable paving as an on-lot stormwater management measure under its Stormwater Management Policy and the Best Practice Environmental Management (BPEM) guidelines. It's not a flat-rate cash rebate in the way some metro councils run it — it's used to satisfy on-site detention (OSD) or permeable-surface requirements at planning and building permit stage, which can let you avoid expensive tank-based detention systems on tight Arena and Heritage Springs lots. The credit only applies when the install meets the Council's specified base, jointing and infiltration spec — a normal paver bed with sand joints doesn't qualify, and an engineer's certification is usually required for the credit to be applied at permit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What permeable paving spec does Council actually require?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The standard infiltration-paver spec we install for Officer Council credit comprises: 80mm-thick clay-fired permeable pavers (or concrete-block permeable pavers with 8-10mm joints) over a 50mm bedding layer of 2-5mm angular aggregate, over a 100-150mm storage course of clean 20mm aggregate, over a non-woven geotextile fabric on the subgrade. Joints are filled with 2-5mm clean aggregate (NOT polymer sand — that defeats the purpose). The whole assembly is designed to detain and infiltrate the 1-in-10-year ARI rainfall event. On Class H reactive clay in Officer that means infiltration is limited, so the storage course often doubles as detention before slow discharge to the legal point of discharge." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does permeable paving work on Officer's reactive clay?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, but the design changes. On free-draining sandy sites permeable paving infiltrates straight into the subgrade. On Class H reactive clay — which covers most of Officer, Officer South and Heritage Springs — true infiltration is very slow (often under 10mm/hr after the clay wets up). We design Officer permeable pavements as detention systems: the aggregate storage course holds water during the storm event, then releases it slowly via a perforated outlet pipe to the legal discharge point. You still get the stormwater treatment benefit (filters out hydrocarbons, sediments, nitrogen) and the planning credit, but the engineering is detention-focused, not infiltration-focused." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often does permeable paving need maintenance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Joint aggregate needs vacuum-cleaning every 12-24 months in Officer — typically by a contractor with a regenerative-air sweeper. The Officer growth corridor still has a lot of bare earth and construction sites blowing fines around, so the first 2-3 years post-install need more frequent cleaning. Once surrounding estates are landscaped and stable, intervals stretch out. We include the first cleaning service in our 24-month workmanship period at no extra cost so the credit-validating performance is maintained. After year 2, a typical residential vacuum-clean runs $250-$450 depending on area." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does permeable paving cost compared to standard pavers in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Permeable pavers themselves are about 25-40% more expensive per square metre than standard concrete pavers ($120-$160/sqm installed vs $90-$130/sqm standard). The bigger cost is the base — 200-250mm of clean angular aggregate plus geotextile and perforated outlet pipework adds $35-$60/sqm on top. So a typical Officer permeable driveway lands in the $155-$220/sqm installed range. But if the Council credit lets you avoid a $4,000-$8,000 in-ground detention tank on a small lot, the maths often works out cheaper overall — and you get a better-looking finish than an inspection-pit-and-tank arrangement." }
+    }
+  ]
+};
+---
+<Layout
+  title="Permeable paving in Officer — Cardinia stormwater credit & spec | (03) 9003 0108"
+  description="Permeable paving in Officer 3809 with Cardinia Shire stormwater credit. Class H clay detention design, infiltration paver spec, 24-month maintenance program. AS 3727 compliant."
+  canonical="https://officerpavingco.com.au/permeable-paving-officer/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Permeable Paving &middot; Officer &middot; Cardinia Shire Credit</span>
+      <h1>Permeable paving in <span class="accent">Officer</span> — stormwater credits, properly engineered.</h1>
+      <p class="hero-sub">
+        Cardinia Shire recognises permeable paving as an on-lot stormwater
+        management measure under its Stormwater Management Policy. Done right,
+        it satisfies on-site detention requirements and can avoid expensive
+        underground tanks on tight Arena and Heritage Springs lots. Done wrong,
+        it&rsquo;s a normal driveway with extra steps and no credit applied.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">How the credit works</span>
+      <h2>What Cardinia Shire is actually offering.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Most homeowners hear &ldquo;stormwater credit&rdquo; and picture a cash
+          rebate landing in the letterbox. That&rsquo;s not how Cardinia runs it.
+          The credit is applied at planning and building permit stage — the
+          Council recognises a properly designed permeable surface as
+          contributing to your on-site detention (OSD) requirement. On a
+          tight Arena lot where a conventional plan would force you into a
+          $4,000&ndash;$8,000 underground detention tank, getting a permeable
+          driveway over the line at permit can avoid that tank entirely.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Where the credit lives.</h3>
+        <p>
+          Cardinia&rsquo;s framework draws on the Victorian Best Practice
+          Environmental Management (BPEM) guidelines for urban stormwater and
+          the IPWEA permeable pavement specification. We&rsquo;ve been through
+          this process with Cardinia&rsquo;s development engineering team
+          enough times to know what they want to see on the engineer&rsquo;s
+          stormwater management plan: infiltration test results (or detention
+          calcs if the test fails), the paver product certification,
+          base-course gradation curve, outlet detail, and a maintenance plan.
+          We package all of that with our quote so your private certifier
+          isn&rsquo;t chasing missing documents on submission day.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Class H clay reality check.</h3>
+        <p>
+          Officer sits on Class H to H1 reactive clay under AS 2870. Infiltration
+          rates after the clay has wetted up are typically below 10mm/hr —
+          well below the BPEM design rainfall intensity. So almost every
+          Officer permeable pavement we install is a <strong>detention</strong>
+          system, not an <strong>infiltration</strong> system. The 150&ndash;200mm
+          storage course of clean 20mm aggregate holds the storm event water,
+          then releases it slowly through a perforated outlet to the legal
+          point of discharge. The treatment benefit (filters hydrocarbons,
+          nitrogen, sediment) is the same. The planning credit is the same.
+          The engineering language on the drawings is different.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Build spec</span>
+      <h2>The Officer permeable pavement spec.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Top down.</h3>
+        <ul>
+          <li><strong>80mm permeable pavers</strong> — concrete-block with widened spacers, or fired-clay permeable, with manufacturer certification of permeability under AS 3727 testing.</li>
+          <li><strong>2&ndash;5mm clean angular jointing aggregate</strong> — never polymer sand, never standard washed sand. The joints are the inlet — block them and the system fails.</li>
+          <li><strong>50mm bedding course</strong> of 2&ndash;5mm angular aggregate, screeded flat.</li>
+          <li><strong>150&ndash;200mm storage course</strong> of clean 20mm aggregate, no fines, compacted in 100mm lifts.</li>
+          <li><strong>Non-woven geotextile fabric</strong> wrapped around the storage course to keep clay subgrade fines out.</li>
+          <li><strong>Perforated subsoil outlet pipe</strong> at 1:200 fall to the legal discharge — kerb-and-channel outlet, soakwell or legal stormwater point.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">2026 cost-per-sqm bands in Officer.</h3>
+        <p>
+          For straightforward residential permeable paving in Officer
+          we&rsquo;re currently quoting in the
+          <strong>$155&ndash;$220 per square metre installed</strong> range.
+          That sits between plain concrete ($80&ndash;$100/sqm),
+          exposed-aggregate ($115&ndash;$140/sqm), standard paver
+          ($90&ndash;$130/sqm) and natural stone ($180&ndash;$280/sqm). The
+          uplift is the storage course aggregate, the geotextile and the
+          outlet pipework — not the pavers themselves. Where the Council
+          credit avoids a detention tank, the homeowner is typically
+          $2,500&ndash;$5,500 ahead on the total project budget.
+        </p>
+
+        <h3 style="margin-top: 2rem;">When permeable isn&rsquo;t the right answer.</h3>
+        <p>
+          We won&rsquo;t recommend permeable paving in Officer if: the lot
+          falls towards the house (you don&rsquo;t want a wet detention
+          course next to your slab), the existing legal point of discharge
+          is uphill or unworkable, the proposed area sees heavy commercial
+          vehicle traffic, or you simply don&rsquo;t need the planning
+          credit because your lot already has working detention. In those
+          cases an exposed-aggregate driveway with a grated linear drain to
+          a soakwell is the better answer — same drainage outcome, simpler
+          maintenance, lower up-front cost.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Maintenance &amp; warranty</span>
+      <h2>Keeping the credit valid.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Cardinia&rsquo;s credit isn&rsquo;t a once-off tick. The permeable
+          surface has to keep functioning. If the joints clog with fines from
+          surrounding bare lots, garden mulch or street sweeping, infiltration
+          drops to zero and you effectively have a sealed paver driveway with
+          poor drainage. Within the first 2&ndash;3 years post-install,
+          while surrounding Officer estates are still being built out and
+          dust is in the air, we schedule a 12-month and 24-month vacuum
+          clean using a regenerative-air sweeper that pulls fines out of the
+          joints without pulling the aggregate out with them.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Our standard inclusions.</h3>
+        <p>
+          We include the first vacuum-clean at month 18 in every Officer
+          permeable paving job — no extra cost, no chase-up. After that the
+          recommended cycle is every 18&ndash;24 months and runs around
+          $250&ndash;$450 for a typical residential area. We hand over a
+          maintenance log with the handover pack so when the home is sold,
+          the next owner has documented evidence the credit conditions are
+          being honoured.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Workmanship and product warranty.</h3>
+        <p>
+          24-month workmanship warranty on the install (joints, edge
+          restraint, levels, outlet integrity). Manufacturer warranty on
+          the permeable pavers runs 10&ndash;25 years depending on product
+          — we&rsquo;ll spell out exactly which product, which warranty, on
+          the quote. As a VBA-registered builder we hold the required
+          Domestic Building Insurance and can produce certificates on
+          request before any deposit is paid.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Officer permeable paving quote.</h2>
+        <p>
+          We&rsquo;ll do a site visit, check legal point of discharge,
+          quote against the Cardinia Council credit spec, and provide an
+          engineer&rsquo;s stormwater management plan ready for permit
+          submission. No charge, no obligation.
+        </p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="mailto:quotes@officerpavingco.com.au">Email quotes@officerpavingco.com.au</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

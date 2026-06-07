@@ -1,0 +1,177 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's a safe non-slip rating for a pool surround in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Australian Standard AS 4586 (Slip resistance) and AS 4663 (Wet-pendulum testing) classify slip resistance by P-rating (P0-P5) and R-rating (R9-R13). For a residential pool surround we recommend P4/R11 minimum on the immediate pool edge (within 1m of waterline) and P3/R10 acceptable on the wider patio. Bluestone and granite both naturally test R11 in honed finish, R12 in flamed or bush-hammered finish. Sandstone tests R10-R11 honed, R11-R12 sand-blasted. Through-coloured porcelain pool pavers (Adbri, Boral) are specifically tested and labelled — most are R11. We never lay polished or smooth-finished stone immediately around a pool — they fail wet-pendulum below P3 every time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Bullnose copers vs square-edge pavers for the pool edge?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bullnose copers (rounded edge profile sitting on the pool coping line) are the safer call for any pool with kids or grandparents — the rounded edge stops shin-bashing, gives a clean visual break between pool water and paving, and aligns with the pool waterline so water doesn't pond against the coping. Square-edge pavers laid flush with the pool edge look more contemporary but are sharper underfoot when wet and tend to create a thin overhang that chips over years. Standard bluestone bullnose coper is ~$60-$90/m supplied for 30mm thickness, ~$120-$160/m installed (cut, fitted, glue-bedded to existing pool coping). We default to bullnose unless the design specifically calls for square-edge." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does chlorine or salt damage natural stone pool surrounds?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Salt chlorinator water (the majority of new Cardinia Lakes / Officer pools) is mildly aggressive on porous stone over years. Sandstone and travertine particularly will show salt-spray pitting on the pool-edge row of pavers within 8-12 years if unsealed. Bluestone, granite and porcelain are essentially unaffected — they're either non-porous or salt-resistant. Mitigation if you're set on sandstone or travertine pool surrounds: penetrating salt-resistant sealer (Aqua Mix or LTP brands) applied at install and refreshed every 4 years, plus a generous splash zone (drained linear or grated drain to catch waterline overflow rather than letting it sit on the pavers). For a 30+ year horizon pool, we usually recommend bluestone or porcelain at the immediate edge with sandstone in the wider patio if the warm tone is wanted." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an engineer for a pool-surround paving job?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually no for the paving itself — at-grade pool surrounds are exempt residential pavement work under AS 3727. You DO need engineer involvement if: (1) the pool surround sits on top of a retaining wall above 1m (the wall needs AS 4678 engineering), (2) the surround is elevated (suspended) above natural ground on a structural slab — that's structural concrete work, different scope, and (3) you're cantilevering pavers over the pool coping line by more than 50mm — large-format cantilevers need pull-out fixing engineering. The pool itself needs its own structural and fence-compliance certification (Vic pool-fence regulations apply) but the surround paving doesn't trigger that, just needs to integrate with it cleanly." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long after a new pool is installed can the surround paving start?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Generally 4-6 weeks after pool shell completion and 2-3 weeks after first fill. The pool concrete needs full curing before being loaded with adjacent paving works, and the pool surround paving wants to be coordinated with the final pool coping (the stone or tile band that sits on the pool shell rim, around 50mm wide). Sequencing matters: (1) pool shell + coping band installed by pool builder, (2) backfill compacted to the pool shell edges, (3) we excavate the surround zone to depth, lay base, install drainage and pavers tying into the coping. If we're brought in too early, the coping isn't there to tie pavers into; too late, we're working over pool-builder backfill that's poorly compacted. We coordinate scheduling with your pool builder if you ask us in at quote stage." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about glass-balustrade or pool-fence integration with the paving?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pool fences and glass spigots fixed through pavers need core-drilled fixings into a solid sub-base — either a structural concrete slab or our compacted Class 3 base with concrete pad footings under each spigot point. The Vic pool-fence regulations require the fence be installed before the pool is filled and remain compliant continuously; if your paving job lifts or replaces existing surround pavers, the fence and gate compliance has to be maintained throughout the work. We coordinate with the pool-fence installer — usually we install the paver bedding with concrete pad footings pre-positioned for the fence spigots, then the fence is installed after paving is laid and polymeric-sand cured. The whole job is typically 3-4 weeks elapsed when fence + paving + drainage are all coordinated." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Surround Paving Officer | Non-Slip Natural Stone | (03) 9003 0108"
+  description="Pool surround paving for Officer, Cardinia Lakes, Beaconsfield — non-slip bluestone, granite, sandstone and porcelain rated to P4/R11. Bullnose copers, AS 4586 compliant, pool-fence integration."
+  canonical="https://officerpavingco.com.au/services/pool-surrounds/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Non-slip natural stone &amp; porcelain</span>
+      <h1>Pool surround paving in <span class="accent">Officer &amp; Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        Non-slip natural stone and porcelain pavers around residential pools.
+        Bluestone, granite, sandstone, through-coloured porcelain &mdash; all tested
+        P4/R11 or better to AS 4586. Bullnose copers, pool-zone falls, chemical-safe
+        edging, integration with glass pool-fence spigots.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Slip-rating is the first decision.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Australian Standards <strong>AS 4586 (slip resistance)</strong> and
+          <strong>AS 4663 (wet pendulum testing)</strong> classify paver surfaces
+          by P-rating (P0&ndash;P5) and R-rating (R9&ndash;R13). For a residential
+          pool surround:
+        </p>
+        <ul>
+          <li><strong>Within 1m of waterline:</strong> P4 / R11 minimum. Honed bluestone or granite, flamed or bush-hammered finishes, sand-blasted sandstone, or specifically-rated porcelain pavers.</li>
+          <li><strong>Wider pool patio:</strong> P3 / R10 acceptable. Standard honed or natural-finish stone.</li>
+          <li><strong>What we never lay near a pool:</strong> polished granite, polished travertine, smooth-finished porcelain, or any surface that tests below P3 wet.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Material choices we recommend.</h3>
+        <ul>
+          <li><strong>Bluestone (honed or flamed):</strong> R11&ndash;R12. Charcoal-grey, salt-resistant, 30+ year horizon. ~$95&ndash;$160/m&sup2; supplied for 30mm pavers.</li>
+          <li><strong>Granite (flamed):</strong> R11&ndash;R12. Hardest available, deeper colours (charcoal, dark grey, occasionally rust-flecked), salt-resistant. ~$120&ndash;$180/m&sup2; supplied.</li>
+          <li><strong>Sandstone (sand-blasted):</strong> R11&ndash;R12. Warm honey/cream tones, slightly porous so needs salt-resistant sealing at install + 4-yearly refresh. ~$85&ndash;$140/m&sup2; supplied.</li>
+          <li><strong>Through-coloured porcelain (20mm):</strong> R11 (specifically rated). Zero porosity, frost-proof, chemical-resistant, modern minimal look. ~$120&ndash;$190/m&sup2; supplied.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Bullnose copers &mdash; the edge that matters.</h3>
+        <p>
+          The pool-edge paver row is where shin-bashing happens. We default to
+          <strong>bullnose-edge copers</strong> &mdash; pavers with a rounded
+          edge profile sitting on the pool coping line. Bluestone bullnose
+          copers: ~$60&ndash;$90/m supplied for 30mm thickness, ~$120&ndash;$160/m
+          installed (cut, fitted, glue-bedded onto existing pool coping). Square-edge
+          pavers look more contemporary but are sharper underfoot and chip at the
+          waterline over years. We&rsquo;ll spec square-edge if the design calls
+          for it &mdash; just want you to make the call knowingly.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pool-zone falls and drainage.</h3>
+        <p>
+          The pool surround needs <strong>fall AWAY from the pool</strong>
+          (so chlorine-rich splash drains to lawn or drainage point, not back
+          into the pool itself), but also fall AWAY from the house and away from
+          glass-fence panels. We design 1:60 fall away from pool with grated
+          linear drains at the patio perimeter to catch splash overflow before
+          it crosses onto adjacent lawn or paths. AS 3727 minimum is 1:80; for
+          pool zones we go steeper because splash volumes are higher and you
+          don&rsquo;t want puddles around the lounge / sun-chair zone.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Salt-chlorinator vs natural stone.</h3>
+        <p>
+          The majority of new Officer pools are salt-chlorinator. Salt water is
+          mildly aggressive to porous stone over years. <strong>Bluestone, granite
+          and porcelain</strong> are essentially unaffected. <strong>Sandstone
+          and travertine</strong> will show salt-spray pitting on the pool-edge
+          row within 8&ndash;12 years if unsealed. If you want the warm tone of
+          sandstone at the pool edge, we recommend penetrating salt-resistant
+          sealer (Aqua Mix or LTP) at install and refresh every 4 years &mdash;
+          or use bluestone/porcelain for the immediate splash zone and sandstone
+          in the wider patio.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pool-fence integration.</h3>
+        <p>
+          Glass-balustrade and aluminium pool fences fix through pavers into a
+          solid sub-base. We pre-position concrete pad footings under each spigot
+          location during base prep, then the fence-installer drops the spigots
+          into those footings after paving is laid and cured. Vic pool-fence
+          regulations require continuous compliance &mdash; we coordinate with
+          the pool fencer so the fence comes down only as long as needed for
+          paving work, and gets re-certified before water goes back into the
+          pool.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical pool-surround pricing.</h3>
+        <ul>
+          <li>30m&sup2; bluestone pool surround + bullnose copers: $9,500&ndash;$13,500</li>
+          <li>30m&sup2; granite pool surround + bullnose copers: $11,500&ndash;$15,500</li>
+          <li>30m&sup2; sealed-sandstone pool surround + bullnose copers: $9,000&ndash;$13,000</li>
+          <li>30m&sup2; through-coloured porcelain pool surround + copers: $11,000&ndash;$15,000</li>
+          <li>50m&sup2; wraparound bluestone + grated linear drain: $16,500&ndash;$22,500</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free pool surround consultation.</h2>
+        <p>Slip-rating-tested samples on-site. Pool-builder coordination at quote stage.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
