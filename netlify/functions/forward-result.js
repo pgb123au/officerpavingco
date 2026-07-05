@@ -7,7 +7,7 @@
 
 const TO_EMAIL = "peter@yesai.au";
 const FROM_EMAIL = "voicemail@yesai.au";
-const FROM_NAME = "Heritage Springs Lakes Paving Co &amp; Pergolas";
+const FROM_NAME = "Officer Paving Co";
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") return { statusCode: 405, body: "Method not allowed" };

@@ -113,7 +113,9 @@ li { margin-bottom: 0.4rem; }
 
 /* ========== HERO ========== */
 .hero {
-  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-dark) 100%);
+
+  background: linear-gradient(135deg, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.58) 100%), var(--c-navy, #0f172a) url('/images/hero.jpg') center / cover no-repeat;
+  background-size: cover;
   color: var(--c-white);
   padding: 3rem 0 4rem;
   position: relative;

@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does paving last?", "acceptedAnswer": {"@type": "Answer", "text": "Plain concrete: 25+ years. Exposed-aggregate: 25+ years (re-seal every 5). Concrete pavers: 25+ years. Clay pavers: 40+ years. Natural stone: 50+ years."}}, {"@type": "Question", "name": "Concrete or paver — which is cheaper?", "acceptedAnswer": {"@type": "Answer", "text": "Concrete cheaper to install ($85-$140 vs $120-$180). Pavers cheaper to repair when a section fails (replace individual pavers vs slab-section saw-cut)."}}, {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "Driveway (40sqm): 3-5 working days. Path (15sqm): 1-2 days. Patio (25sqm): 2-3 days. Plus 7 days cure before vehicle use on concrete."}}, {"@type": "Question", "name": "Saw cuts — necessary?", "acceptedAnswer": {"@type": "Answer", "text": "On slabs over 25sqm, yes — they control where cracks happen. Random cracking is otherwise certain."}}, {"@type": "Question", "name": "Council storm-water — anything to worry about?", "acceptedAnswer": {"@type": "Answer", "text": "Some councils give a storm-water credit for permeable paving. We tell you up-front. Otherwise gravity drainage is straightforward."}}, {"@type": "Question", "name": "Can you match existing pavers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes if they're a current product. Heritage profiles often need salvage — adds $50-$150/sqm."}}, {"@type": "Question", "name": "What's the warranty?", "acceptedAnswer": {"@type": "Answer", "text": "10 years on concrete workmanship; 25 years on paver materials (manufacturer); 5 years on paver workmanship."}}]};
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does paving last?", "acceptedAnswer": {"@type": "Answer", "text": "Plain concrete: 25+ years. Exposed-aggregate: 25+ years (re-seal every 5). Concrete pavers: 25+ years. Clay pavers: 40+ years. Natural stone: 50+ years."}}, {"@type": "Question", "name": "Concrete or paver - which is cheaper?", "acceptedAnswer": {"@type": "Answer", "text": "Concrete cheaper to install ($85-$140 vs $120-$180). Pavers cheaper to repair when a section fails (replace individual pavers vs slab-section saw-cut)."}}, {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "Driveway (40sqm): 3-5 working days. Path (15sqm): 1-2 days. Patio (25sqm): 2-3 days. Plus 7 days cure before vehicle use on concrete."}}, {"@type": "Question", "name": "Saw cuts - necessary?", "acceptedAnswer": {"@type": "Answer", "text": "On slabs over 25sqm, yes - they control where cracks happen. Random cracking is otherwise certain."}}, {"@type": "Question", "name": "Council storm-water - anything to worry about?", "acceptedAnswer": {"@type": "Answer", "text": "Some councils give a storm-water credit for permeable paving. We tell you up-front. Otherwise gravity drainage is straightforward."}}, {"@type": "Question", "name": "Can you match existing pavers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes if they're a current product. Heritage profiles often need salvage - adds $50-$150/sqm."}}, {"@type": "Question", "name": "What's the warranty?", "acceptedAnswer": {"@type": "Answer", "text": "10 years on concrete workmanship; 25 years on paver materials (manufacturer); 5 years on paver workmanship."}}]};
 const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Paving", "provider": {"@type": "GeneralContractor", "name": "Officer Paving Co", "telephone": "+61390030108", "url": "https://officerpavingco.com.au", "areaServed": {"@type": "City", "name": "Officer"}}, "areaServed": "Officer", "url": "https://officerpavingco.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "17"}};
 const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://officerpavingco.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://officerpavingco.com.au/pricing/"}]};
 ---
 <Layout
   title="Paving prices in Officer 2026 | (03) 9003 0108"
-  description="Paving prices in Officer — driveway, path, patio. Concrete, exposed-agg, pavers, natural stone. 2026 rates per sqm. Call (03) 9003 0108."
+  description="Paving prices in Officer - driveway, path, patio. Concrete, exposed-agg, pavers, natural stone. 2026 rates per sqm. Call (03) 9003 0108."
   canonical="https://officerpavingco.com.au/pricing/">
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -17,9 +17,9 @@ const breadcrumbSchema = {"@context": "https://schema.org", "@type": "Breadcrumb
 
   <section class="hero">
     <div class="hero-inner">
-      <span class="hero-eyebrow">Concrete, exposed-aggregate, paver, stone — done properly</span>
-      <h1>Paving prices in Officer — 2026 driveway, path, patio guide</h1>
-      <p class="hero-sub">Paving in Officer ranges from $85/sqm (plain concrete) to $380/sqm (natural stone with full base prep). The cheap end is where corners get cut on base preparation — and a poorly-based driveway settles 25mm in year 2 and cracks in year 5. The base prep is 60% of the work and the entire reason the surface lasts.</p>
+      <span class="hero-eyebrow">Concrete, exposed-aggregate, paver, stone - done properly</span>
+      <h1>Paving prices in Officer - 2026 driveway, path, patio guide</h1>
+      <p class="hero-sub">Paving in Officer ranges from $85/sqm (plain concrete) to $380/sqm (natural stone with full base prep). The cheap end is where corners get cut on base preparation - and a poorly-based driveway settles 25mm in year 2 and cracks in year 5. The base prep is 60% of the work and the entire reason the surface lasts.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
         <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
@@ -42,92 +42,92 @@ const breadcrumbSchema = {"@context": "https://schema.org", "@type": "Breadcrumb
           <tbody>
             <tr>
               <td data-label="Service"><strong>Plain concrete driveway (per sqm)</strong></td>
-              <td data-label="Price"><span class="price-range">$85 – $140</span></td>
+              <td data-label="Price"><span class="price-range">$85 - $140</span></td>
               <td data-label="Note">Standard 100mm thickness, basic finish, SL72 mesh.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Exposed-aggregate concrete (per sqm)</strong></td>
-              <td data-label="Price"><span class="price-range">$120 – $180</span></td>
+              <td data-label="Price"><span class="price-range">$120 - $180</span></td>
               <td data-label="Note">Most popular driveway option. Stones exposed, sealed.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Honed / polished concrete (per sqm)</strong></td>
-              <td data-label="Price"><span class="price-range">$140 – $220</span></td>
+              <td data-label="Price"><span class="price-range">$140 - $220</span></td>
               <td data-label="Note">Smooth, premium finish.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Stamped / pattern concrete (per sqm)</strong></td>
-              <td data-label="Price"><span class="price-range">$140 – $220</span></td>
+              <td data-label="Price"><span class="price-range">$140 - $220</span></td>
               <td data-label="Note">Mimics paver pattern, monolithic slab.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Concrete paver (per sqm fitted)</strong></td>
-              <td data-label="Price"><span class="price-range">$120 – $180</span></td>
+              <td data-label="Price"><span class="price-range">$120 - $180</span></td>
               <td data-label="Note">Standard rectangular or block paver.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Clay / brick paver (per sqm fitted)</strong></td>
-              <td data-label="Price"><span class="price-range">$140 – $220</span></td>
+              <td data-label="Price"><span class="price-range">$140 - $220</span></td>
               <td data-label="Note">Bevelled edge, traditional look.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Permeable paver (per sqm fitted)</strong></td>
-              <td data-label="Price"><span class="price-range">$160 – $260</span></td>
+              <td data-label="Price"><span class="price-range">$160 - $260</span></td>
               <td data-label="Note">Council storm-water credit eligible in some areas.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Natural stone — sandstone (per sqm fitted)</strong></td>
-              <td data-label="Price"><span class="price-range">$220 – $380</span></td>
+              <td data-label="Service"><strong>Natural stone - sandstone (per sqm fitted)</strong></td>
+              <td data-label="Price"><span class="price-range">$220 - $380</span></td>
               <td data-label="Note">Premium look. Includes substrate prep.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Natural stone — bluestone (per sqm fitted)</strong></td>
-              <td data-label="Price"><span class="price-range">$260 – $420</span></td>
+              <td data-label="Service"><strong>Natural stone - bluestone (per sqm fitted)</strong></td>
+              <td data-label="Price"><span class="price-range">$260 - $420</span></td>
               <td data-label="Note">Heritage-grade, premium.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Natural stone — travertine (per sqm fitted)</strong></td>
-              <td data-label="Price"><span class="price-range">$220 – $380</span></td>
+              <td data-label="Service"><strong>Natural stone - travertine (per sqm fitted)</strong></td>
+              <td data-label="Price"><span class="price-range">$220 - $380</span></td>
               <td data-label="Note">Pool surround favourite.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Base preparation — excavation + crushed rock</strong></td>
-              <td data-label="Price"><span class="price-range">$28 – $48 per sqm</span></td>
+              <td data-label="Service"><strong>Base preparation - excavation + crushed rock</strong></td>
+              <td data-label="Price"><span class="price-range">$28 - $48 per sqm</span></td>
               <td data-label="Note">On top of surface cost. 150-200mm of compacted base.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Reinforcement — SL72 mesh</strong></td>
-              <td data-label="Price"><span class="price-range">$12 – $18 per sqm</span></td>
+              <td data-label="Service"><strong>Reinforcement - SL72 mesh</strong></td>
+              <td data-label="Price"><span class="price-range">$12 - $18 per sqm</span></td>
               <td data-label="Note">Standard residential.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Reinforcement — SL82 / engineered</strong></td>
-              <td data-label="Price"><span class="price-range">$22 – $38 per sqm</span></td>
+              <td data-label="Service"><strong>Reinforcement - SL82 / engineered</strong></td>
+              <td data-label="Price"><span class="price-range">$22 - $38 per sqm</span></td>
               <td data-label="Note">Required on reactive clay or commercial-grade.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Saw cut / control joints</strong></td>
-              <td data-label="Price"><span class="price-range">$18 – $32 per linear m</span></td>
+              <td data-label="Price"><span class="price-range">$18 - $32 per linear m</span></td>
               <td data-label="Note">Prevents random cracking; required on slabs &gt;25sqm.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Edge restraint (driveways)</strong></td>
-              <td data-label="Price"><span class="price-range">$28 – $48 per linear m</span></td>
+              <td data-label="Price"><span class="price-range">$28 - $48 per linear m</span></td>
               <td data-label="Note">Concrete haunch under edge pavers.</td>
             </tr>
             <tr>
               <td data-label="Service"><strong>Demolition + removal of existing</strong></td>
-              <td data-label="Price"><span class="price-range">$45 – $85 per sqm</span></td>
+              <td data-label="Price"><span class="price-range">$45 - $85 per sqm</span></td>
               <td data-label="Note">Existing concrete or paving.</td>
             </tr>
             <tr>
-              <td data-label="Service"><strong>Drainage — strip drain (per linear m)</strong></td>
-              <td data-label="Price"><span class="price-range">$120 – $220</span></td>
+              <td data-label="Service"><strong>Drainage - strip drain (per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$120 - $220</span></td>
               <td data-label="Note">Required across driveway entrance.</td>
             </tr>
           </tbody>
         </table>
-      <p class="table-foot"><em>Prices indicative for Officer in 2026. Final quote depends on your site — call (03) 9003 0108 for an exact number.</em></p>
+      <p class="table-foot"><em>Prices indicative for Officer in 2026. Final quote depends on your site - call (03) 9003 0108 for an exact number.</em></p>
     </div>
   </section>
 
@@ -149,25 +149,25 @@ const breadcrumbSchema = {"@context": "https://schema.org", "@type": "Breadcrumb
       <h2>What changes the price on your job</h2>
       <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
         <ol class="numbered-list">
-          <li>Base prep — the difference between a 5-year and a 25-year driveway.</li>
-          <li>Soil reactivity — reactive clay needs SL82 mesh + articulation joints under AS 2870.</li>
-          <li>Slope + drainage — gravity drainage cheap; pumped drainage adds $1,200–$2,800.</li>
-          <li>Area — under 15sqm sit at premium per-sqm; over 50sqm gets a volume discount.</li>
-          <li>Access — ready-mix truck access + spread distance affects pour cost.</li>
+          <li>Base prep - the difference between a 5-year and a 25-year driveway.</li>
+          <li>Soil reactivity - reactive clay needs SL82 mesh + articulation joints under AS 2870.</li>
+          <li>Slope + drainage - gravity drainage cheap; pumped drainage adds $1,200-$2,800.</li>
+          <li>Area - under 15sqm sit at premium per-sqm; over 50sqm gets a volume discount.</li>
+          <li>Access - ready-mix truck access + spread distance affects pour cost.</li>
         </ol>
     </div>
   </section>
 
   <section class="section section-warn">
     <div class="section-inner">
-      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <h2>Red flags - what to watch for in quotes</h2>
       <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
         <ul class="bullet-list">
-          <li>'$60/sqm concrete' specials — almost always without mesh, without proper base, without saw cuts. Cracks in 2 years.</li>
-          <li>Quotes without saw-cut control joints on slabs over 25sqm — random cracking is a near-certainty.</li>
-          <li>Cheap-end pavers (sub-$25/sqm) — settle, crack, edge-fail in 3 years.</li>
-          <li>Driveways without edge restraint — pavers walk out at the edges within 12 months.</li>
-          <li>Quotes that don't include drainage — pooling water on a driveway = slip hazard + ice in winter (in cooler Officer suburbs).</li>
+          <li>'$60/sqm concrete' specials - almost always without mesh, without proper base, without saw cuts. Cracks in 2 years.</li>
+          <li>Quotes without saw-cut control joints on slabs over 25sqm - random cracking is a near-certainty.</li>
+          <li>Cheap-end pavers (sub-$25/sqm) - settle, crack, edge-fail in 3 years.</li>
+          <li>Driveways without edge restraint - pavers walk out at the edges within 12 months.</li>
+          <li>Quotes that don't include drainage - pooling water on a driveway = slip hazard + ice in winter (in cooler Officer suburbs).</li>
         </ul>
     </div>
   </section>
@@ -195,7 +195,7 @@ const breadcrumbSchema = {"@context": "https://schema.org", "@type": "Breadcrumb
           <div class="faq-a">Plain concrete: 25+ years. Exposed-aggregate: 25+ years (re-seal every 5). Concrete pavers: 25+ years. Clay pavers: 40+ years. Natural stone: 50+ years.</div>
         </details>
         <details class="faq-item">
-          <summary class="faq-q"><strong>Concrete or paver — which is cheaper?</strong></summary>
+          <summary class="faq-q"><strong>Concrete or paver - which is cheaper?</strong></summary>
           <div class="faq-a">Concrete cheaper to install ($85-$140 vs $120-$180). Pavers cheaper to repair when a section fails (replace individual pavers vs slab-section saw-cut).</div>
         </details>
         <details class="faq-item">
@@ -203,16 +203,16 @@ const breadcrumbSchema = {"@context": "https://schema.org", "@type": "Breadcrumb
           <div class="faq-a">Driveway (40sqm): 3-5 working days. Path (15sqm): 1-2 days. Patio (25sqm): 2-3 days. Plus 7 days cure before vehicle use on concrete.</div>
         </details>
         <details class="faq-item">
-          <summary class="faq-q"><strong>Saw cuts — necessary?</strong></summary>
-          <div class="faq-a">On slabs over 25sqm, yes — they control where cracks happen. Random cracking is otherwise certain.</div>
+          <summary class="faq-q"><strong>Saw cuts - necessary?</strong></summary>
+          <div class="faq-a">On slabs over 25sqm, yes - they control where cracks happen. Random cracking is otherwise certain.</div>
         </details>
         <details class="faq-item">
-          <summary class="faq-q"><strong>Council storm-water — anything to worry about?</strong></summary>
+          <summary class="faq-q"><strong>Council storm-water - anything to worry about?</strong></summary>
           <div class="faq-a">Some councils give a storm-water credit for permeable paving. We tell you up-front. Otherwise gravity drainage is straightforward.</div>
         </details>
         <details class="faq-item">
           <summary class="faq-q"><strong>Can you match existing pavers?</strong></summary>
-          <div class="faq-a">Yes if they're a current product. Heritage profiles often need salvage — adds $50-$150/sqm.</div>
+          <div class="faq-a">Yes if they're a current product. Heritage profiles often need salvage - adds $50-$150/sqm.</div>
         </details>
         <details class="faq-item">
           <summary class="faq-q"><strong>What's the warranty?</strong></summary>
